@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HajosTeszt.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,16 @@ using System.Threading.Tasks;
 namespace HajosTeszt.Controllers
 {
     [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class BoatController : ControllerBase
     {
        /* [HttpGet]
         [Route("questions/{sorszám}")]
         public ActionResult M2(int sorszám)
+        [HttpGet]
+        [Route("questions/all")]
+        public ActionResult M1()
         {
             HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions
