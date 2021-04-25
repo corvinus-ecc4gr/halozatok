@@ -11,7 +11,7 @@ namespace HajosTeszt.Controllers
     [ApiController]
     public class BoatController : ControllerBase
     {
-        [HttpGet]
+       /* [HttpGet]
         [Route("questions/{sorszám}")]
         public ActionResult M2(int sorszám)
         {
@@ -23,6 +23,6 @@ namespace HajosTeszt.Controllers
             if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
 
             return new JsonResult(kérdés);
-        }
+        }*/
     }
 }
